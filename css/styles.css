@@ -74,9 +74,9 @@ footer p{
     clear: both;
 }
 */
-.video {
+video {
     
-    align-content: center;
+    width: 100vw;
     padding: -90px 0
 
 }
