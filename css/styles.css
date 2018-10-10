@@ -20,7 +20,13 @@ font-family: "open sans";
 }
 footer {
     background-color: #332a86;
-    margin: none;
+    margin: 0;
+    Padding: 90px 0;
+}
+
+footer p{
+    margin: 0;
+
 }
 .header {
     Padding: 4em 0em;
@@ -62,8 +68,15 @@ footer {
     display: table;
     clear: both;
 }
-.clearfix::before {
+/*.clearfix::before {
     content:"";
     display: table;
     clear: both;
+}
+*/
+.video {
+    
+    align-content: center;
+    padding: -90px 0
+
 }
