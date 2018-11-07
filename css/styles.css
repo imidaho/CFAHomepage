@@ -8,15 +8,26 @@ Blue: #70cde3
 
 
 * {
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, li{
     font-family: "Brandon Grotesque";
     text-transform: uppercase;
-  }
+}
+
+ul {
+    list-style-type: none;
+}
 p{
-font-family: "open sans";
+    font-family: "open sans";
+}
+
+body {
+    /* overflow: hidden; */
+
 }
 footer {
     background-color: #332a86;
@@ -24,59 +35,95 @@ footer {
     Padding: 90px 0;
 }
 
-footer p{
-    margin: 0;
-
-}
-.header {
-    Padding: 4em 0em;
-    background: #332a86;
-    Margin-bottom: -30px;
-   
-}
-
-.header-title {
-    color: #8dc63f;
-    float: left;
-}
-.main-nav {
-    float: left;
-
-}
-.main-nav li{
-   float: right;
-   margin: 1em;
-   color: #8dc63f;
-}
-.main-nav a {
-    color: #8dc63f
-}
-.hero-img{
-    width: 100%;
-    margin: none;
-}
-.midbox {
-    border: 2px solid #000;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.clearfix::after {
-    content:"";
-    display: table;
-    clear: both;
-}
-/*.clearfix::before {
-    content:"";
-    display: table;
-    clear: both;
-}
-*/
 video {
     
     width: 100vw;
     padding: -90px 0
 
 }
+.header {
+    Padding: 0em 0em;
+    background: #332a86;
+}
+.header-logo{
+    width: 200px;
+}
+.header-title {
+    color: #8dc63f;
+    float: left;
+}
+.main-nav {
+    width: 100%;
+    background-color:blue;
+    height: 100px;
+}
+.main-nav li{
+   float: right;
+   margin: 1em;
+   color: white;
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+}
+.main-nav a:hover{
+    color:#8dc63f;
+    background-color: white;
+    border-radius: 5%;
+    border: 2px solid;
+    border-color: #8dc63f;
+    padding:5px;
+}
+
+.main-logo{
+    display: flex;
+    width: 100%;
+    max-width: 100px;
+}
+.main-container{
+   
+}
+.hero-img{
+  
+    background: url(../img/foggy-Farm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 72.02%;
+    position: relative;
+    text-align: center;
+}
+
+.name-and-logo {
+    width: 80%;
+    position:absolute;
+    top: 50%;
+    left: 53%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+    
+/* .clearfix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.clearfix::before {
+    content:"";
+    display: table;
+    clear: both; 
+ } */
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {};
+
+/* Medium devices (tablets, 768px and up) */ 
+@media (min-width: 768px) {  };
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { };
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { } ;
