@@ -24,12 +24,11 @@ ul {
     justify-content: center;
     align-items: center;
 }    
-p {
+p, textarea {
     font-family: "open sans";
 }
 
 header {
-    /* padding: 0em; */
     background-color:#332a86;
 }
 footer {
