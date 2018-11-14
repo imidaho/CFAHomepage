@@ -1,11 +1,10 @@
 /*
-color pallet:
+CFA color pallet:
 Purple: #332a86
 Teal: #73c6a1
 Green: #8dc63f
 Blue: #70cde3
 */
-
 
 * {
     box-sizing: border-box;
@@ -23,6 +22,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 10vh;
 }    
 p, textarea {
     font-family: "open sans";
@@ -30,25 +30,21 @@ p, textarea {
 
 header {
     background-color:#332a86;
+    height:10vh;
 }
 footer {
     background-color: #332a86;
     margin: 0;
-    Padding: 10vh
+    height: 10vh;
 }
 button{
     background-color: #8dc63f;
     border: none;
-    padding: 2em
+    height:10vh; 
 }
-
+/*classes*/
 .main-nav {
-    width: 100%;
-    height: 10vh;
-    
-}
-.main-nav li:first-child{
-    margin-left: 10vh;
+    flex-wrap: wrap;
 }
 .main-nav li{
     margin: 4em;
@@ -75,7 +71,7 @@ button{
     background-position: center;
     position: relative;
     text-align: center;
-    height: 61vh;
+    height: 70vh;
 }
 
 .name-and-logo {
@@ -100,7 +96,7 @@ button{
 }
 .form-popup {
     display: none;
-    margin: 10vh; 
+    height: 10vh; 
 }
 
 .form-popup h1, 
@@ -114,16 +110,49 @@ button{
     padding: 1em;
 }
  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {};
+@media screen and (min-width: 576px) {};
 
 /* Medium devices (tablets, 768px and up) */ 
-@media (min-width: 850px) { 
-
-
+@media screen and (min-width: 850px) { 
+    header {
+        height:20vh;
+    }
+    ul { 
+        height:20vh;
+        flex-wrap: wrap
+    }   
+    button{
+        height:10vh; 
+    } 
+    footer {
+        height: 10vh;
+    }
+    .hero-img{
+        height: 60vh;
+    }
+    
  };
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { };
+@media screen and (min-width: 992px) {
+    header {
+        height:10vh;
+    }
+    ul { 
+        height:10vh;
+
+    }   
+    button{
+        height:10vh; 
+    } 
+    footer {
+        height: 10vh;
+    }
+    .hero-img{
+        height: 70vh;
+    }
+
+ };
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { } ;
