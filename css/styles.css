@@ -22,15 +22,18 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 10vh;
-}    
+}
+ 
 p, textarea {
     font-family: "open sans";
 }
 
 header {
     background-color:#332a86;
-    height:10vh;
+    padding: 20px 0; 
 }
 footer {
     background-color: #332a86;
@@ -53,10 +56,11 @@ button:hover{
     flex-wrap: wrap;
 }
 .main-nav li{
-    margin: 4em;
-    padding:1em;
+    margin: 10px;
+    padding:0;
     color: white;
     border:2px #332a86;
+    display: block;
 }
 .main-nav a {
     color: white;
@@ -120,12 +124,19 @@ button:hover{
     text-align: center;
 }
  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {};
+@media (max-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */ 
-@media (min-width: 850px) { 
+@media (max-width: 850px) { 
+    .main-nav {
+        display:flex;
+        flex-wrap: wrap;
+        height: 20vh;
+    }
+    .main-nav a {}
+    
     header {
-        height:20vh;
+        height:30vh;
     }
     ul { 
         height:20vh;
@@ -138,10 +149,10 @@ button:hover{
         height: 10vh;
     }
     .hero-img{
-        height: 60vh;
+        height: 50vh;
     }
     
- };
+ }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -154,15 +165,16 @@ button:hover{
     }   
     button{
         height:10vh; 
+        cursor: pointer;
     } 
     footer {
-        height: 10vh;
+        
     }
     .hero-img{
         height: 70vh;
     }
 
- };
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { } ;
+@media (min-width: 1200px) { }
