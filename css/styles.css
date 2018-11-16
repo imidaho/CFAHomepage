@@ -42,6 +42,7 @@ footer {
 }
 button{
     background-color: #8dc63f;
+    color: white;
     border: none;
     height:10vh; 
     padding:1em;
@@ -108,7 +109,6 @@ button:hover{
 }
 .form-popup {
     display: none;
-    height: 60vh; 
 }
 
 .form-popup h1, 
@@ -123,25 +123,21 @@ button:hover{
     padding: 1em;
     text-align: center;
 }
- /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {}
 
-/* Medium devices (tablets, 768px and up) */ 
+/* Mobile devices*/ 
 @media (max-width: 850px) { 
-    .main-nav {
-        display:flex;
-        flex-wrap: wrap;
-        height: 20vh;
-    }
-    .main-nav a {}
     
     header {
         height:30vh;
+        padding: 15px 114px;
     }
     ul { 
         height:20vh;
         flex-wrap: wrap
     }   
+    a {
+        size: 1.5em;
+    }
     button{
         height:10vh; 
     } 
@@ -151,14 +147,15 @@ button:hover{
     .hero-img{
         height: 50vh;
     }
-    
+    .main-nav {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 1em;
+    }
  }
 
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    header {
-        height:10vh;
-    }
     ul { 
         height:10vh;
 
@@ -177,4 +174,4 @@ button:hover{
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { }
+/* @media (min-width: 1200px) { }  */
