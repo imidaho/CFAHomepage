@@ -153,25 +153,3 @@ button:hover{
         padding: 1em;
     }
  }
-
-/* Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    ul { 
-        height:10vh;
-
-    }   
-    button{
-        height:10vh; 
-        cursor: pointer;
-    } 
-    footer {
-        
-    }
-    .hero-img{
-        height: 70vh;
-    }
-
- }
-
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { }  */
